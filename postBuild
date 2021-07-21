@@ -1,4 +1,4 @@
-curl https://mirrors.ocf.berkeley.edu/apache/spark/spark-2.4.8/spark-2.4.8-bin-hadoop2.7.tgz | sudo tar -xz
+wget -c https://mirrors.ocf.berkeley.edu/apache/spark/spark-2.4.8/spark-2.4.8-bin-hadoop2.7.tgz -O - | tar -xz
 # set spark home and pyspark paths
 SPARK_HOME=$HOME/spark-2.4.8-bin-hadoop2.7.tgz
 export PATH=$SPARK_HOME/bin:$PATH
